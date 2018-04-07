@@ -8,13 +8,10 @@ import org.mockito.MockitoAnnotations;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
-
-import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 public class LandingPageTest {
-
     @Mock
     private
     HttpServletRequest request;
@@ -26,6 +23,9 @@ public class LandingPageTest {
     @Mock
     private
     PrintWriter printWriter;
+
+    public LandingPageTest() {
+    }
 
     @Before
     public void setUp() {
